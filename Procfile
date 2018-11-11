@@ -1,1 +1,0 @@
-web: switch-store-bot

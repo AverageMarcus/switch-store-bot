@@ -1,10 +1,10 @@
 package main
 
 import (
-	"os"
 	"fmt"
 	"log"
 	"math/rand"
+	"os"
 	"time"
 
 	"github.com/go-telegram-bot-api/telegram-bot-api"
@@ -19,7 +19,7 @@ type Subscription struct {
 var subscriptions []Subscription
 
 func InitBot(debug bool) *tgbotapi.BotAPI {
-	bot, err := tgbotapi.NewBotAPI(os.Getenv('TELEGRAM_TOKEN'))
+	bot, err := tgbotapi.NewBotAPI(os.Getenv("TELEGRAM_TOKEN"))
 	if err != nil {
 		panic(err)
 	}
